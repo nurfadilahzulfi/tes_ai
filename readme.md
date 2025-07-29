@@ -27,8 +27,8 @@ pip install -r requirements.txt
 
 # 📦 Dependencies
 Buat file requirements.txt dengan konten berikut:
-requests>=2.28.0
-ollama>=0.1.0
+- requests>=2.28.0
+- ollama>=0.1.0
 
 # 🎯 Cara Penggunaan
 ## Menjalankan Chatbot
@@ -44,3 +44,36 @@ Bot: Halo! Saya adalah assistant AI yang menggunakan model Llama 3.1. Saya bisa 
 You: Jelaskan tentang machine learning
 Bot: Machine learning adalah cabang dari artificial intelligence (AI) yang memungkinkan komputer untuk belajar dan membuat keputusan tanpa diprogram secara eksplisit...
 
+# 📁 Struktur Project
+python-llama-chatbot/
+│
+├── chatbot.py          # File utama aplikasi
+├── requirements.txt    # Dependencies Python
+├── README.md          # Dokumentasi ini
+└── config.py          # Konfigurasi (opsional)
+
+# ⚙️ Konfigurasi
+Anda dapat menyesuaikan pengaturan chatbot dengan mengedit parameter berikut :
+### Dalam chatbot.py
+- MODEL_NAME = "llama3.1:8b"
+- OLLAMA_HOST = "http://localhost:11434"
+- MAX_TOKENS = 2048
+- TEMPERATURE = 0.7
+
+# Connection Error
+- Pastikan Ollama service berjalan di port 11434
+- Periksa firewall atau antivirus yang mungkin memblokir koneksi
+
+# 👤 Author
+Nur Fadilah Zulfi - Polteknik Negeri Lhokseumawe - github.com/nurfadilahzulfi
+
+# 🙏 Ucapan Terima Kasih
+- Tim Meta AI untuk model Llama 3.1
+- Ollama team untuk tool yang memudahkan deployment model
+- Komunitas open source Python
+
+# 📞 Support
+Jika Anda mengalami masalah atau memiliki pertanyaan:
+
+# Buat issue di GitHub Issues
+Email: nurfadilahzulfi@gmail.com
